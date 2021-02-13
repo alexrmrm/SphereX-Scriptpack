@@ -26,8 +26,8 @@ elif (<argo.flags>&<def.statf_dead>)
   sysmessage @038A Only the living may be recruited.
   return 1
 endif
-If (<argo.memoryfindtype.<def0.memory_guild>.uid>)
-  If (<argo.memoryfindtype.<def0.memory_guild>.link> == <ref1.uid>)
+If (<argo.memoryfindtype.memory_guild.isvalid>)
+  If (<argo.memoryfindtype.memory_guild.link> == <ref1.uid>)
     sysmessage @038A They are already a guildmember!
   else
     sysmessage @038A You can only recruit candidates who are not already in a guild.
